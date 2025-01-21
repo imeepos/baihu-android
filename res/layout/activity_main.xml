@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	<com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:theme="@style/MyAppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="?attr/colorPrimary" app:popupTheme="@style/MyAppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+		<LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16sp">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black" android:id="@+id/welcome_text" android:text="欢迎使用白虎开发助手!" android:textSize="20sp" android:layout_marginBottom="8sp" />
+			<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black" android:id="@+id/welcome_text" android:text="基础信息(点击复制)" android:textSize="16sp" android:layout_marginBottom="8sp" />
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备ID：" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/device_id" android:text="********" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接口地址：" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/base_url" android:text="********" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工具地址：" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/pc_url" android:text="********" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black" android:id="@+id/welcome_text" android:text="接口列表(点击复制)" android:textSize="16sp" android:layout_marginBottom="8sp" />
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本号" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_version" android:text="version" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_exit" android:text="exit" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_click" android:text="click" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备信息" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_device_info" android:text="deviceInfo" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="找图" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_find_image" android:text="findImage" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前应用信息" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_current_app_info" android:text="currentAppInfo" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取html" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_get_html" android:text="getHtml" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取xml" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_get_xml" android:text="getXml" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前页面" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_get_page" android:text="getPage" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="页面跳转" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_go_page" android:text="goPage" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="执行代码" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_run_code" android:text="runCode" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="执行脚本" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_run_script" android:text="runScript" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="截屏" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_take_screen" android:text="takeScreen" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="截屏裁剪" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_screen_clip" android:text="takeScreenClip" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传代码" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_upload_script" android:text="uploadScript" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="批量上传" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_upload_multi" android:text="uploadMulti" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="执行元素" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_run_element" android:text="runElement" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="所有任务" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_task_all" android:text="taskAll" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂停任务" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_stop" android:text="stop" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="继续任务" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_resume" android:text="resume" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:layout_marginRight="4sp" android:textColor="@color/purple_500" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="销毁任务" />
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal_700" android:id="@+id/api_destory" android:text="destory" android:layout_marginBottom="4sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "androidResources": {
+    "manifest": "AndroidManifest.xml",
+    "resDir": "res"
+  },
+  "assets": [],
+  "build": {
+    "build_id": "95BF9FE2-2",
+    "build_number": 2,
+    "build_time": 1737252274713,
+    "release": false
+  },
+  "encryptLevel": 0,
+  "features": {
+    "activityIntentTasks": false,
+    "nodejs": "auto"
+  },
+  "icon": "images/ic_app_logo.png",
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashIcon": "images/ic_splash.png",
+    "splashText": "Powered by org.sker.dev",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "白虎开发助手",
+  "optimization": {
+    "obfuscateComponents": false,
+    "removeAccessibilityService": false,
+    "removeOpenCv": false,
+    "unusedResources": false
+  },
+  "packageName": "org.sker.dev",
+  "permissionConfig": {
+    "requestListOnStartup": [
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+  "plugins": {
+    "org.autojs.autojspro.plugin.mlkit.ocr": "1.1"
+  },
+  "scripts": {},
+  "signingConfig": {
+    "alias": "sker",
+    "keystore": "/storage/emulated/0/脚本/.keystore/baihu.jks",
+    "uuid": "8a5e38be-930a-4a69-8a89-20dc3f7b6b40"
+  },
+  "useFeatures": [],
+  "versionCode": 0,
+  "versionName": "1.0.0"
+}
